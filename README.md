@@ -81,3 +81,4 @@ Parties can adopt the OSCA taxonomy in part or in full. No requirement is impose
 - OSCA was inspired by https://ambassadorlabs.github.io/k8s-for-humans/
 - Komodor uses a similar approach to link deployed services to git repositories https://docs.komodor.com/Learn/komodor-source-control.html
 - [Giant Swarm annotations](https://github.com/giantswarm/fmt/blob/master/kubernetes/annotations_and_labels.md#labels-set-on-objects-installed-by-charts)
+- [Openshift](https://github.com/redhat-developer/app-labels/blob/master/labels-annotation-for-openshift.adoc#annotations)
