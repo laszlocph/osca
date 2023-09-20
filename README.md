@@ -56,15 +56,14 @@ spec:
 
 ### Version control
 
-| Annotation                           | Description                                                        | Example                                  | Format                                                    |
-| ------------------------------------ | ------------------------------------------------------------------ | ---------------------------------------- | --------------------------------------------------------- |
-| osca.dev/v0.0.0/vcs                  | Host name of the version control system                            | `github.com`                             | host name without protocol                                |
-| osca.dev/v0.0.0/owner                | Onwer user/organization/group handle in the version control system | `octocat`                                | any valid owner in the version control system             |
-| osca.dev/v0.0.0/repository           | Repository name in the version control system                      | `Hello-World`                            | any valid repository name in the version control system   |
-| osca.dev/v0.0.0/owner-and-repository | right-aligned                                                      | `octocat/Hello-World`                    | owner and repository separated with a slash               |
-| osca.dev/v0.0.0/repository-link      | right-aligned                                                      | `https://github.com/octocat/Hello-World` | full link of the repository                               |
-| osca.dev/v0.0.0/sha                  | right-aligned                                                      | `7fd1a60b`                               | a valid git hash identifier in the version control system |
-| osca.dev/v0.0.0/tag                  | right-aligned                                                      | `v1.0.0`                                 | a valid tag identifier in the version control system      |
+| Annotation                      | Description                                                        | Example                                  | Format                                                    |
+| ------------------------------- | ------------------------------------------------------------------ | ---------------------------------------- | --------------------------------------------------------- |
+| osca.dev/v0.0.0/vcs             | Host name of the version control system                            | `github.com`                             | host name without protocol                                |
+| osca.dev/v0.0.0/owner           | Onwer user/organization/group handle in the version control system | `octocat`                                | any valid owner in the version control system             |
+| osca.dev/v0.0.0/repository      | Repository name in the version control system                      | `Hello-World`                            | any valid repository name in the version control system   |
+| osca.dev/v0.0.0/repository-link | right-aligned                                                      | `https://github.com/octocat/Hello-World` | full link of the repository                               |
+| osca.dev/v0.0.0/sha             | right-aligned                                                      | `7fd1a60b`                               | a valid git hash identifier in the version control system |
+| osca.dev/v0.0.0/tag             | right-aligned                                                      | `v1.0.0`                                 | a valid tag identifier in the version control system      |
 
 ## Conformity
 
