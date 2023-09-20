@@ -65,6 +65,19 @@ spec:
 | osca.dev/v0.0.0/sha             | right-aligned                                                      | `7fd1a60b`                               | a valid git hash identifier in the version control system |
 | osca.dev/v0.0.0/tag             | right-aligned                                                      | `v1.0.0`                                 | a valid tag identifier in the version control system      |
 
+### External references
+
+| Annotation                    | Description                                                                                            | Example                                         | Format         |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | -------------- |
+| osca.dev/v0.0.0/documentation | Link to documentation. The link's preferred usage is in a `href` html tag.                             | `https://confluence.mycompany.com/cart-backend` | any valid link |
+| osca.dev/v0.0.0/logs          | Link to log aggregation platform. The link's preferred usage is in a `href` html tag.                  | `https://grafana.mycompany.com/logs`            | any valid link |
+| osca.dev/v0.0.0/metrics       | Link to metrics dashboard. The link's preferred usage is in a `href` html tag.                         | `https://grafana.mycompany.com/cart-dashboard`  | any valid link |
+| osca.dev/v0.0.0/issues        | Link to issue tracker. The link's preferred usage is in a `href` html tag.                             | `https://jira.mycompany.com/cart-backend`       | any valid link |
+| osca.dev/v0.0.0/ci            | Link to the CI pipeline run that built the app. The link's preferred usage is in a `href` html tag. | `https://github.com/laszlocph/osca/actions`     | any valid link |
+| osca.dev/v0.0.0/traces        | Link to application traces. The link's preferred usage is in a `href` html tag.                         |                                                 | any valid link |
+| osca.dev/v0.0.0/runbooks      | Link to runbooks. The link's preferred usage is in a `href` html tag.                                  |                                                 | any valid link |
+| osca.dev/v0.0.0/dev-portal    | Link to general information about the service. The link's preferred usage is in a `href` html tag.     |                                                 | any valid link |
+
 ## Conformity
 
 Parties can adopt the OSCA taxonomy in part or in full. No requirement is imposed on the adopter in the completeness sense, but the adopted taxonomy elements must not be misused deliberately.
