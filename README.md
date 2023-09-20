@@ -78,6 +78,14 @@ spec:
 | osca.dev/v0.0.0/runbooks      | Link to runbooks. The link's preferred usage is in a `href` html tag.                                  |                                                 | any valid link |
 | osca.dev/v0.0.0/dev-portal    | Link to general information about the service. The link's preferred usage is in a `href` html tag.     |                                                 | any valid link |
 
+### Service ownership
+
+| Annotation            | Description                                                      | Example                     | Format                                                        |
+| --------------------- | ---------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------- |
+| osca.dev/v0.0.0/owner | The person or team who is responsible for this service           | `Jane Doe`, `Platform team` | unstructured                                                  |
+| osca.dev/v0.0.0/im    | Instant messaging channel, or direct message handle of the owner | `@jane`, `#platform-team`   | prefix with # for channels, prefix with @ for direct messages |
+| osca.dev/v0.0.0/email | e-mail address of the owner                                      | `jane@coolcompany.com`      | A valid email address                                         |
+
 ## Conformity
 
 Parties can adopt the OSCA taxonomy in part or in full. No requirement is imposed on the adopter in the completeness sense, but the adopted taxonomy elements must not be misused deliberately.
