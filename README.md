@@ -68,12 +68,16 @@ spec:
 
 ### External references
 
-| Annotation                    | Description                                                                           | Example                                         | Format         |
-| ----------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------- |
-| osca.dev/v0.0.0/documentation | Link to documentation. The link's preferred usage is in a `href` html tag.            | `https://confluence.mycompany.com/cart-backend` | any valid link |
-| osca.dev/v0.0.0/logs          | Link to log aggregation platform. The link's preferred usage is in a `href` html tag. | `https://grafana.mycompany.com/logs`            | any valid link |
-| osca.dev/v0.0.0/metrics       | Link to metrics dashboard. The link's preferred usage is in a `href` html tag.        | `https://grafana.mycompany.com/cart-dashboard`  | any valid link |
-| osca.dev/v0.0.0/issues        | Link to issue tracker. The link's preferred usage is in a `href` html tag.            | `https://jira.mycompany.com/cart-backend`       | any valid link |
+| Annotation                    | Description                                                                                            | Example                                         | Format         |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | -------------- |
+| osca.dev/v0.0.0/documentation | Link to documentation. The link's preferred usage is in a `href` html tag.                             | `https://confluence.mycompany.com/cart-backend` | any valid link |
+| osca.dev/v0.0.0/logs          | Link to log aggregation platform. The link's preferred usage is in a `href` html tag.                  | `https://grafana.mycompany.com/logs`            | any valid link |
+| osca.dev/v0.0.0/metrics       | Link to metrics dashboard. The link's preferred usage is in a `href` html tag.                         | `https://grafana.mycompany.com/cart-dashboard`  | any valid link |
+| osca.dev/v0.0.0/issues        | Link to issue tracker. The link's preferred usage is in a `href` html tag.                             | `https://jira.mycompany.com/cart-backend`       | any valid link |
+| osca.dev/v0.0.0/ci            | Link to the Continuous Integration server project. The link's preferred usage is in a `href` html tag. | `https://github.com/laszlocph/osca/actions`     | any valid link |
+| osca.dev/v0.0.0/traces        | Link to applicatin traces. The link's preferred usage is in a `href` html tag.                         |                                                 | any valid link |
+| osca.dev/v0.0.0/runbooks      | Link to runbooks. The link's preferred usage is in a `href` html tag.                                  |                                                 | any valid link |
+| osca.dev/v0.0.0/dev-portal    | Link to general information about the service. The link's preferred usage is in a `href` html tag.     |                                                 | any valid link |
 
 ## Conformity
 
