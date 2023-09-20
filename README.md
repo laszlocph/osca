@@ -56,35 +56,36 @@ spec:
 
 ### Version control
 
-| Annotation                      | Description                                                        | Example                                  | Format                                                    |
-| ------------------------------- | ------------------------------------------------------------------ | ---------------------------------------- | --------------------------------------------------------- |
-| osca.dev/v0.0.0/vcs             | Host name of the version control system                            | `github.com`                             | host name without protocol                                |
-| osca.dev/v0.0.0/owner           | Onwer user/organization/group handle in the version control system | `octocat`                                | any valid owner in the version control system             |
-| osca.dev/v0.0.0/repository      | Repository name in the version control system                      | `Hello-World`                            | any valid repository name in the version control system   |
-| osca.dev/v0.0.0/repository-link | right-aligned                                                      | `https://github.com/octocat/Hello-World` | full link of the repository                               |
-| osca.dev/v0.0.0/sha             | right-aligned                                                      | `7fd1a60b`                               | a valid git hash identifier in the version control system |
-| osca.dev/v0.0.0/tag             | right-aligned                                                      | `v1.0.0`                                 | a valid tag identifier in the version control system      |
+| Annotation                   | Description                                                        | Example                                                                                  | Format                                                    |
+| ---------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| osca.dev/v0.0.0/vcs/host     | Host name of the version control system                            | `github.com`                                                                             | host name without protocol                                |
+| osca.dev/v0.0.0/vcs/owner    | Onwer user/organization/group handle in the version control system | `octocat`                                                                                | any valid owner in the version control system             |
+| osca.dev/v0.0.0/vcs/name     | Repository name in the version control system                      | `Hello-World`                                                                            | any valid repository name in the version control system   |
+| osca.dev/v0.0.0/vcs/link     |                                                                    | `https://github.com/octocat/Hello-World`                                                 | full link of the repository                               |
+| osca.dev/v0.0.0/version/sha  |                                                                    | `7fd1a60b`                                                                               | a valid git hash identifier in the version control system |
+| osca.dev/v0.0.0/version/tag  |                                                                    | `v1.0.0`                                                                                 | a valid tag identifier in the version control system      |
+| osca.dev/v0.0.0/version/link |                                                                    | `https://github.com/octocat/Hello-World/commit/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d` | full link to the version                                  |
 
 ### External references
 
-| Annotation                    | Description                                                                                            | Example                                         | Format         |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | -------------- |
-| osca.dev/v0.0.0/documentation | Link to documentation. The link's preferred usage is in a `href` html tag.                             | `https://confluence.mycompany.com/cart-backend` | any valid link |
-| osca.dev/v0.0.0/logs          | Link to log aggregation platform. The link's preferred usage is in a `href` html tag.                  | `https://grafana.mycompany.com/logs`            | any valid link |
-| osca.dev/v0.0.0/metrics       | Link to metrics dashboard. The link's preferred usage is in a `href` html tag.                         | `https://grafana.mycompany.com/cart-dashboard`  | any valid link |
-| osca.dev/v0.0.0/issues        | Link to issue tracker. The link's preferred usage is in a `href` html tag.                             | `https://jira.mycompany.com/cart-backend`       | any valid link |
+| Annotation                    | Description                                                                                         | Example                                         | Format         |
+| ----------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------- |
+| osca.dev/v0.0.0/documentation | Link to documentation. The link's preferred usage is in a `href` html tag.                          | `https://confluence.mycompany.com/cart-backend` | any valid link |
+| osca.dev/v0.0.0/logs          | Link to log aggregation platform. The link's preferred usage is in a `href` html tag.               | `https://grafana.mycompany.com/logs`            | any valid link |
+| osca.dev/v0.0.0/metrics       | Link to metrics dashboard. The link's preferred usage is in a `href` html tag.                      | `https://grafana.mycompany.com/cart-dashboard`  | any valid link |
+| osca.dev/v0.0.0/issues        | Link to issue tracker. The link's preferred usage is in a `href` html tag.                          | `https://jira.mycompany.com/cart-backend`       | any valid link |
 | osca.dev/v0.0.0/ci            | Link to the CI pipeline run that built the app. The link's preferred usage is in a `href` html tag. | `https://github.com/laszlocph/osca/actions`     | any valid link |
-| osca.dev/v0.0.0/traces        | Link to application traces. The link's preferred usage is in a `href` html tag.                         |                                                 | any valid link |
-| osca.dev/v0.0.0/runbooks      | Link to runbooks. The link's preferred usage is in a `href` html tag.                                  |                                                 | any valid link |
-| osca.dev/v0.0.0/dev-portal    | Link to general information about the service. The link's preferred usage is in a `href` html tag.     |                                                 | any valid link |
+| osca.dev/v0.0.0/traces        | Link to application traces. The link's preferred usage is in a `href` html tag.                     |                                                 | any valid link |
+| osca.dev/v0.0.0/runbooks      | Link to runbooks. The link's preferred usage is in a `href` html tag.                               |                                                 | any valid link |
+| osca.dev/v0.0.0/dev-portal    | Link to general information about the service. The link's preferred usage is in a `href` html tag.  |                                                 | any valid link |
 
 ### Service ownership
 
-| Annotation            | Description                                                      | Example                     | Format                                                        |
-| --------------------- | ---------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------- |
-| osca.dev/v0.0.0/owner | The person or team who is responsible for this service           | `Jane Doe`, `Platform team` | unstructured                                                  |
-| osca.dev/v0.0.0/im    | Instant messaging channel, or direct message handle of the owner | `@jane`, `#platform-team`   | prefix with # for channels, prefix with @ for direct messages |
-| osca.dev/v0.0.0/email | e-mail address of the owner                                      | `jane@coolcompany.com`      | A valid email address                                         |
+| Annotation                  | Description                                                      | Example                     | Format                                                        |
+| --------------------------- | ---------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------- |
+| osca.dev/v0.0.0/owner/name  | The person or team who is responsible for this service           | `Jane Doe`, `Platform team` | unstructured                                                  |
+| osca.dev/v0.0.0/owner/im    | Instant messaging channel, or direct message handle of the owner | `@jane`, `#platform-team`   | prefix with # for channels, prefix with @ for direct messages |
+| osca.dev/v0.0.0/owner/email | e-mail address of the owner                                      | `jane@coolcompany.com`      | A valid email address                                         |
 
 ## Conformity
 
