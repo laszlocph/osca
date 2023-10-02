@@ -28,8 +28,11 @@ metadata:
   annotations:
     opensca.dev/v0.1.0/name: cart-backend
     opensca.dev/v0.1.0/description: "Backend to manage shopping cart state, written in Go"
-    opensca.dev/v0.1.0/owner-and-repository: "octocat/Hello-World"
-    opensca.dev/v0.1.0/sha: 7fd1a60b01f91b314f59955a4e4d4e80d8edf11d
+    opensca.dev/v0.1.0/vcs/owner: "octocat"
+    opensca.dev/v0.1.0/vcs/name: "Hello-World"
+    opensca.dev/v0.1.0/version/sha: 7fd1a60b01f91b314f59955a4e4d4e80d8edf11d
+    opensca.dev/v0.1.0/owner/name: "backend-team"
+    opensca.dev/v0.1.0/owner/im: "#backend-team"
 spec:
   replicas: 1
   selector:
