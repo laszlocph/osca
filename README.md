@@ -26,13 +26,13 @@ metadata:
     app: cart-backend
   name: cart-backend
   annotations:
-    opensca.dev/v0.1.0/name: cart-backend
-    opensca.dev/v0.1.0/description: "Backend to manage shopping cart state, written in Go"
-    opensca.dev/v0.1.0/vcs/owner: "octocat"
-    opensca.dev/v0.1.0/vcs/name: "Hello-World"
-    opensca.dev/v0.1.0/version/sha: 7fd1a60b01f91b314f59955a4e4d4e80d8edf11d
-    opensca.dev/v0.1.0/owner/name: "backend-team"
-    opensca.dev/v0.1.0/owner/im: "#backend-team"
+    v1alpha1.opensca.dev/name: cart-backend
+    v1alpha1.opensca.dev/description: "Backend to manage shopping cart state, written in Go"
+    v1alpha1.opensca.dev/vcs.owner: "octocat"
+    v1alpha1.opensca.dev/vcs.name: "Hello-World"
+    v1alpha1.opensca.dev/version.sha: 7fd1a60b01f91b314f59955a4e4d4e80d8edf11d
+    v1alpha1.opensca.dev/owner.name: "backend-team"
+    v1alpha1.opensca.dev/owner.im: "#backend-team"
 spec:
   replicas: 1
   selector:
@@ -54,41 +54,41 @@ spec:
 
 | Annotation                  | Description                                    | Example                                                | Format                                                                                                                                                                                                                                      |
 | --------------------------- | ---------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| opensca.dev/v0.1.0/name        | The service name for unique identification     | `cart-backend`                                         | [RFC 1035](https://tools.ietf.org/html/rfc1035) Label Names <br>- contain at most 63 characters <br>- contain only lowercase alphanumeric characters or '-'<br>- start with an alphabetic character<br>- end with an alphanumeric character |
-| opensca.dev/v0.1.0/description | Human readable text description of the service | `Backend to manage shopping cart state, written in Go` | unstructured                                                                                                                                                                                                                                |
+| v1alpha1.opensca.dev/name        | The service name for unique identification     | `cart-backend`                                         | [RFC 1035](https://tools.ietf.org/html/rfc1035) Label Names <br>- contain at most 63 characters <br>- contain only lowercase alphanumeric characters or '-'<br>- start with an alphabetic character<br>- end with an alphanumeric character |
+| v1alpha1.opensca.dev/description | Human readable text description of the service | `Backend to manage shopping cart state, written in Go` | unstructured                                                                                                                                                                                                                                |
 
 ### Version control
 
 | Annotation                   | Description                                                        | Example                                                                                  | Format                                                    |
 | ---------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| opensca.dev/v0.1.0/vcs/host     | Host name of the version control system                            | `github.com`                                                                             | host name without protocol                                |
-| opensca.dev/v0.1.0/vcs/owner    | Onwer user/organization/group handle in the version control system | `octocat`                                                                                | any valid owner in the version control system             |
-| opensca.dev/v0.1.0/vcs/name     | Repository name in the version control system                      | `Hello-World`                                                                            | any valid repository name in the version control system   |
-| opensca.dev/v0.1.0/vcs/link     |                                                                    | `https://github.com/octocat/Hello-World`                                                 | full link of the repository                               |
-| opensca.dev/v0.1.0/version/sha  |                                                                    | `7fd1a60b`                                                                               | a valid git hash identifier in the version control system |
-| opensca.dev/v0.1.0/version/tag  |                                                                    | `v1.0.0`                                                                                 | a valid tag identifier in the version control system      |
-| opensca.dev/v0.1.0/version/link |                                                                    | `https://github.com/octocat/Hello-World/commit/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d` | full link to the version                                  |
+| v1alpha1.opensca.dev/vcs/host     | Host name of the version control system                            | `github.com`                                                                             | host name without protocol                                |
+| v1alpha1.opensca.dev/vcs.owner    | Onwer user/organization/group handle in the version control system | `octocat`                                                                                | any valid owner in the version control system             |
+| v1alpha1.opensca.dev/vcs.name     | Repository name in the version control system                      | `Hello-World`                                                                            | any valid repository name in the version control system   |
+| v1alpha1.opensca.dev/vcs.link     |                                                                    | `https://github.com/octocat/Hello-World`                                                 | full link of the repository                               |
+| v1alpha1.opensca.dev/version.sha  |                                                                    | `7fd1a60b`                                                                               | a valid git hash identifier in the version control system |
+| v1alpha1.opensca.dev/version.tag  |                                                                    | `v1.0.0`                                                                                 | a valid tag identifier in the version control system      |
+| v1alpha1.opensca.dev/version.link |                                                                    | `https://github.com/octocat/Hello-World/commit/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d` | full link to the version                                  |
 
 ### External references
 
 | Annotation                    | Description                                                                                         | Example                                         | Format         |
 | ----------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------- |
-| opensca.dev/v0.1.0/documentation | Link to documentation. The link's preferred usage is in a `href` html tag.                          | `https://confluence.mycompany.com/cart-backend` | any valid link |
-| opensca.dev/v0.1.0/logs          | Link to log aggregation platform. The link's preferred usage is in a `href` html tag.               | `https://grafana.mycompany.com/logs`            | any valid link |
-| opensca.dev/v0.1.0/metrics       | Link to metrics dashboard. The link's preferred usage is in a `href` html tag.                      | `https://grafana.mycompany.com/cart-dashboard`  | any valid link |
-| opensca.dev/v0.1.0/issues        | Link to issue tracker. The link's preferred usage is in a `href` html tag.                          | `https://jira.mycompany.com/cart-backend`       | any valid link |
-| opensca.dev/v0.1.0/ci            | Link to the CI pipeline run that built the app. The link's preferred usage is in a `href` html tag. | `https://github.com/laszlocph/osca/actions`     | any valid link |
-| opensca.dev/v0.1.0/traces        | Link to application traces. The link's preferred usage is in a `href` html tag.                     |                                                 | any valid link |
-| opensca.dev/v0.1.0/runbooks      | Link to runbooks. The link's preferred usage is in a `href` html tag.                               |                                                 | any valid link |
-| opensca.dev/v0.1.0/dev-portal    | Link to general information about the service. The link's preferred usage is in a `href` html tag.  |                                                 | any valid link |
+| v1alpha1.opensca.dev/documentation | Link to documentation. The link's preferred usage is in a `href` html tag.                          | `https://confluence.mycompany.com/cart-backend` | any valid link |
+| v1alpha1.opensca.dev/logs          | Link to log aggregation platform. The link's preferred usage is in a `href` html tag.               | `https://grafana.mycompany.com/logs`            | any valid link |
+| v1alpha1.opensca.dev/metrics       | Link to metrics dashboard. The link's preferred usage is in a `href` html tag.                      | `https://grafana.mycompany.com/cart-dashboard`  | any valid link |
+| v1alpha1.opensca.dev/issues        | Link to issue tracker. The link's preferred usage is in a `href` html tag.                          | `https://jira.mycompany.com/cart-backend`       | any valid link |
+| v1alpha1.opensca.dev/ci            | Link to the CI pipeline run that built the app. The link's preferred usage is in a `href` html tag. | `https://github.com/laszlocph/osca/actions`     | any valid link |
+| v1alpha1.opensca.dev/traces        | Link to application traces. The link's preferred usage is in a `href` html tag.                     |                                                 | any valid link |
+| v1alpha1.opensca.dev/runbooks      | Link to runbooks. The link's preferred usage is in a `href` html tag.                               |                                                 | any valid link |
+| v1alpha1.opensca.dev/dev-portal    | Link to general information about the service. The link's preferred usage is in a `href` html tag.  |                                                 | any valid link |
 
 ### Service ownership
 
 | Annotation                  | Description                                                      | Example                     | Format                                                        |
 | --------------------------- | ---------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------- |
-| opensca.dev/v0.1.0/owner/name  | The person or team who is responsible for this service           | `Jane Doe`, `Platform team` | unstructured                                                  |
-| opensca.dev/v0.1.0/owner/im    | Instant messaging channel, or direct message handle of the owner | `@jane`, `#platform-team`   | prefix with # for channels, prefix with @ for direct messages |
-| opensca.dev/v0.1.0/owner/email | e-mail address of the owner                                      | `jane@coolcompany.com`      | A valid email address                                         |
+| v1alpha1.opensca.dev/owner.name  | The person or team who is responsible for this service           | `Jane Doe`, `Platform team` | unstructured                                                  |
+| v1alpha1.opensca.dev/owner.im    | Instant messaging channel, or direct message handle of the owner | `@jane`, `#platform-team`   | prefix with # for channels, prefix with @ for direct messages |
+| v1alpha1.opensca.dev/owner.email | e-mail address of the owner                                      | `jane@coolcompany.com`      | A valid email address                                         |
 
 ## Conformity
 
